@@ -1,22 +1,22 @@
 
 #include<stdio.h>
 
-int main()
+int main(void)
 {
-int x,y,*a,*b,tmp;
-scanf("%d",&x);
-scanf("%d",&y);
-swap(&x,&y);
-  printf("before swapping:x=%d and y=%d",x,y);
+  int num1, num2, tmp;
+  scanf("%d", &num1);
+  scanf("%d", &num2);
+  printf("before swapping:num1 = %d and num2 = %d", num1, num2);
+  swap(&num1, &num2);
+  
 }
-void swap(int *a,int *b)
+void swap(int *num1, int *num2)
 {
-int tmp;
-tmp=*a;
-*a=*b;
-*b=tmp;
-  printf(x,y);
-   printf("after swapping:x=%d and y=%d",x,y);
+  int *tmp;
+  tmp = num1;
+  num1 = num2;
+  num2 = tmp;
+  printf("after swapping:num1 = %d and num2 = %d",*num1, *num2);
 }
 
 
